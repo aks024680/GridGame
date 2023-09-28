@@ -25,10 +25,10 @@ namespace Grid
         
         private void Update()
         {
-            OnCalculation(changeDataNum);
+            PlayerValue(changeDataNum);
 
         }
-        public void OnCalculation(int value)
+        public void PlayerValue(int value)
         {
             if (valueBool)
             {
