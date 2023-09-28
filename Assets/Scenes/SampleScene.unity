@@ -853,9 +853,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d467a504305662b4cb1b95a46af4bac6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeDataNum: 440
+  changeDataNum: 144
   stoneDataNum: 308
-  valueBool: 0
+  valueBoo1: 0
   enemyText: {fileID: 766433412}
   playerText: {fileID: 1900694886}
 --- !u!114 &1364873558
