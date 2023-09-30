@@ -13,15 +13,15 @@ namespace Grid
         [SerializeField, Header("固定數值資料"), Range(1, 1000)]
         public int stoneDataNum;
 
-        int minVal,maxVal = 10000;
+        int minVal = 1;
+        int maxVal = 10000;
 
         public bool valueBoo1;
-        private int akan = 2;
+        private int akan = 1;
         public Text enemyText,playerText;
 
         private void Start()
         {
-            valueBoo1 = true;
             EnemyValue(stoneDataNum);
         }
         
@@ -32,25 +32,17 @@ namespace Grid
         }
         public void PlayerValue(int value)
         {
-            while (akan>0)
-            {
-                print("222222");
+            while (akan > 0)
+            { 
                 value = changeDataNum;
                 changeDataNum = Mathf.Clamp(value, minVal, maxVal);
                 playerText.text = changeDataNum.ToString();
-                if (CompareValue())
-                {
-                    akan--;
-                }
-                else
-                {
-                    print("GG");
-                }
+                CompareValue();
+                akan--;
             }
         }
         public void EnemyValue(int enemyValue)
         {
-            print("44444");
             enemyValue = stoneDataNum;
             enemyText.text = stoneDataNum.ToString();
         }
@@ -67,6 +59,10 @@ namespace Grid
                 print("GameOver");
                 return false;
             }
+        }
+        public void OnMouseDown()
+        {
+            print("qq");
         }
     }
 }
