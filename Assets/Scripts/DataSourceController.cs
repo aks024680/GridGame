@@ -12,21 +12,30 @@ namespace Grid
         public int changeDataNum;
         [SerializeField, Header("固定數值資料"), Range(1, 1000)]
         public int stoneDataNum;
+        [SerializeField]
+        Image myImage;
 
         int minVal = 1;
         int maxVal = 10000;
 
-        public bool valueBoo1;
+
+
+        public Button enemyButton;
+
         private int akan = 1;
         public Text enemyText,playerText;
 
         private void Start()
         {
             EnemyValue(stoneDataNum);
+            
         }
-        
-        private void Update()
+
+        public void OnMouseDown()
         {
+            print(changeDataNum);
+
+            CompareValue();
             PlayerValue(changeDataNum);
 
         }
@@ -46,13 +55,14 @@ namespace Grid
             enemyValue = stoneDataNum;
             enemyText.text = stoneDataNum.ToString();
         }
-        private bool CompareValue()
+        public bool CompareValue()
         {
             if (changeDataNum > stoneDataNum)
             {
                 changeDataNum += stoneDataNum;
+                
                 return true;
-
+                
             }
             else
             {
@@ -60,9 +70,6 @@ namespace Grid
                 return false;
             }
         }
-        public void OnMouseDown()
-        {
-            print("qq");
-        }
+       
     }
 }
