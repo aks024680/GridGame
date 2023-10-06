@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 
+
 namespace Grid
 {
     /// <summary>
@@ -12,15 +13,16 @@ namespace Grid
         public int changeDataNum;
         [SerializeField, Header("固定數值資料"), Range(1, 1000)]
         public int stoneDataNum;
-        [SerializeField]
-        Image myImage;
+        
+
+        ChangeEnemy enemy;
 
         int minVal = 1;
         int maxVal = 10000;
 
+        
 
-
-        public Button enemyButton;
+        
 
         private int akan = 1;
         public Text enemyText,playerText;
@@ -28,7 +30,7 @@ namespace Grid
         private void Start()
         {
             EnemyValue(stoneDataNum);
-            
+           enemy = GetComponentInChildren<ChangeEnemy>();
         }
 
         public void OnMouseDown()
@@ -37,7 +39,9 @@ namespace Grid
 
             CompareValue();
             PlayerValue(changeDataNum);
-
+            enemy.OnClick();
+            print("hahahahahahahahahahahahahahahahahahahhahah");
+            //myImage.sprite = Resources.Load("Image/Enemy/aphid", typeof(Sprite)) as Sprite;
         }
         public void PlayerValue(int value)
         {
