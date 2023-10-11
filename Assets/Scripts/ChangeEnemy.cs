@@ -8,9 +8,18 @@ namespace Grid
     /// </summary>
     public class ChangeEnemy : MonoBehaviour
     {
+        Button btn;
         public void OnClick()
         {
-            this.gameObject.SetActive(false);
+            gameObject.SetActive(false);
+        }
+        public void OnClick2()
+        {
+            gameObject.SetActive(false);
+        }
+        public void OnClick3()
+        {
+            gameObject.SetActive(false);
         }
     }
 }
