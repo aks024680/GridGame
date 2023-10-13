@@ -9,6 +9,7 @@ namespace Grid
     public class ChangeEnemy : MonoBehaviour
     {
         Button btn;
+
         public void OnClick()
         {
             gameObject.SetActive(false);

@@ -1236,9 +1236,8 @@ GameObject:
   - component: {fileID: 1206984137}
   - component: {fileID: 1206984136}
   - component: {fileID: 1206984135}
-  - component: {fileID: 1206984138}
   m_Layer: 5
-  m_Name: EnemyButton
+  m_Name: ThirdEnemyBtn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1309,8 +1308,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1206984138}
-        m_TargetAssemblyTypeName: Grid.ChangeEnemy, Assembly-CSharp
+      - m_Target: {fileID: 1364873557}
+        m_TargetAssemblyTypeName: Grid.DataSourceController, Assembly-CSharp
         m_MethodName: OnClick3
         m_Mode: 1
         m_Arguments:
@@ -1359,18 +1358,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1206984133}
   m_CullTransparentMesh: 1
---- !u!114 &1206984138
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1206984133}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2d3adef17d4da49e28a9824f68e88283, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1235877485
 GameObject:
   m_ObjectHideFlags: 0
@@ -1463,9 +1450,8 @@ GameObject:
   - component: {fileID: 1299114697}
   - component: {fileID: 1299114696}
   - component: {fileID: 1299114695}
-  - component: {fileID: 1299114698}
   m_Layer: 5
-  m_Name: EnemyButton
+  m_Name: SecondEnemyBtn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1536,8 +1522,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1299114698}
-        m_TargetAssemblyTypeName: Grid.ChangeEnemy, Assembly-CSharp
+      - m_Target: {fileID: 1364873557}
+        m_TargetAssemblyTypeName: Grid.DataSourceController, Assembly-CSharp
         m_MethodName: OnClick2
         m_Mode: 1
         m_Arguments:
@@ -1586,18 +1572,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1299114693}
   m_CullTransparentMesh: 1
---- !u!114 &1299114698
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1299114693}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2d3adef17d4da49e28a9824f68e88283, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1353933814
 GameObject:
   m_ObjectHideFlags: 0
@@ -1796,7 +1770,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   changeDataNum: 2
-  stoneDataNum: 1
+  stoneDataNum: 78
+  FirstEnemyBtn: {fileID: 1668869915}
+  SecondEnemyBtn: {fileID: 1299114695}
+  ThirdEnemyBtn: {fileID: 1206984135}
   enemyText: {fileID: 766433412}
   playerText: {fileID: 1900694886}
 --- !u!1 &1623223288
@@ -1909,9 +1886,8 @@ GameObject:
   - component: {fileID: 1668869917}
   - component: {fileID: 1668869916}
   - component: {fileID: 1668869915}
-  - component: {fileID: 1668869918}
   m_Layer: 5
-  m_Name: EnemyButton
+  m_Name: FirstEnemyBtn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1982,8 +1958,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1668869918}
-        m_TargetAssemblyTypeName: Grid.ChangeEnemy, Assembly-CSharp
+      - m_Target: {fileID: 1364873557}
+        m_TargetAssemblyTypeName: Grid.DataSourceController, Assembly-CSharp
         m_MethodName: OnClick
         m_Mode: 1
         m_Arguments:
@@ -2032,18 +2008,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1668869913}
   m_CullTransparentMesh: 1
---- !u!114 &1668869918
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1668869913}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2d3adef17d4da49e28a9824f68e88283, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1900694884
 GameObject:
   m_ObjectHideFlags: 0

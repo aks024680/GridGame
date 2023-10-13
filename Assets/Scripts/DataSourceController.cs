@@ -20,9 +20,10 @@ namespace Grid
         int minVal = 1;
         int maxVal = 10000;
 
-        
+        public Button FirstEnemyBtn;
+        public Button SecondEnemyBtn;
+        public Button ThirdEnemyBtn;
 
-        
 
         private int akan = 1;
         public Text enemyText,playerText;
@@ -39,7 +40,7 @@ namespace Grid
 
             CompareValue();
             PlayerValue(changeDataNum);
-            enemy.OnClick();
+            
             print("hahahahahahahahahahahahahahahahahahahhahah");
             //myImage.sprite = Resources.Load("Image/Enemy/aphid", typeof(Sprite)) as Sprite;
         }
@@ -64,7 +65,9 @@ namespace Grid
             if (changeDataNum > stoneDataNum)
             {
                 changeDataNum += stoneDataNum;
-                
+
+                print("123");
+
                 return true;
                 
             }
@@ -74,6 +77,20 @@ namespace Grid
                 return false;
             }
         }
-       
+        /*public void OnClick()
+        {
+            
+            FirstEnemyBtn.gameObject.SetActive(false);
+        }
+        public void OnClick2()
+        {
+            
+            SecondEnemyBtn.gameObject.SetActive(false);
+        }
+        public void OnClick3()
+        {
+            
+            ThirdEnemyBtn.gameObject.SetActive(false);
+        }*/
     }
 }
